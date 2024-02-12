@@ -2,9 +2,47 @@
     --color: blue;
 }
 
+h1{
+    text-align: center;
+}
 .Cards{
     display: grid;
-    grid-template-columns: 400px 400px 400px;
+    text-align: center;
+    grid-template-columns: 400px 400px 400px 400px;
     font-family: Helvetica, sans-serif;
-    color: var(--color)
+    color: var(--color);
 }
+
+.Sun{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.smallCircle{
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50%;
+	height: 60px;
+	width: 60px;
+    background: blue;
+}
+
+.sunCircle{
+    margin: auto;
+    border-radius: 50%;
+	height: 200px;
+	width: 200px;
+    background: blue;
+}
+
+.sunText{
+    padding-top: 220px;
+}
+p{
+    padding-top: 60px;
+}
+
+
+
