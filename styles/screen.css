@@ -1,32 +1,127 @@
 :root{
-    --color: blue;
+    --fontcolor: white;
+    --planetMargin: auto;
+    --planetMarginTop: 50px;
+    --planetBorderRadius: 50%;
+    --planetHeight: 70px;
+    --planetWidth: 70px;
+    --font: Helvetica, sans-serif;
+    --cardWidth: 10px;
+    --cardColor: #070F2B;
+    --cardBorderColor: #333333;
+    --cardBorderStyle: solid;
+}
+
+html{
+    background-color: #333333;
 }
 
 h1{
     text-align: center;
+    color: var(--fontcolor);
+    width: 650px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-radius: 2%;
+    border-color: darkgray;
+    background-color: var(--cardColor);
+}
+
+h3{
+    text-align: center;
+    color: var(--fontcolor);
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 .Cards{
     display: grid;
     text-align: center;
-    grid-template-columns: 400px 400px 400px 400px;
-    font-family: Helvetica, sans-serif;
-    color: var(--color);
+    grid-template-columns: 300px 300px 300px 300px;
+    font-family: var(--font);
+    color: var(--fontcolor);
+    grid-auto-rows: 300px;
 }
 
 .Sun{
-    grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
+    border-style: var(--cardBorderStyle);
+    border-width: var(--cardWidth);
+    border-color: var(--cardBorderColor);
+    background-color: var(--cardColor)
 }
 
-.smallCircle{
-    margin: auto;
-    margin-top: 50px;
-    border-radius: 50%;
-	height: 60px;
-	width: 60px;
-    background: blue;
+.mercuryCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #B7B8B9;
+}
+
+.venusCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #EED053;
+}
+
+.earthCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #0000A0;
+}
+
+.marsCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #FFA572;
+}
+
+.jupiterCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #E1E1E2;
+}
+
+.saturnCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #EDDBAD;
+}
+
+.uranusCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #ACE5EE;
+}
+
+.neptuneCircle{
+    margin: var(--planetMargin);
+    margin-top: var(--planetMarginTop);
+    border-radius: var(--planetBorderRadius);
+	height: var(--planetHeight);
+	width: var(--planetWidth);
+    background: #89F3FF;
 }
 
 .sunCircle{
@@ -34,14 +129,32 @@ h1{
     border-radius: 50%;
 	height: 200px;
 	width: 200px;
-    background: blue;
+    background: #F9D71C;
 }
 
 .sunText{
     padding-top: 220px;
+    font-size: 35px;
 }
+
+
 p{
-    padding-top: 60px;
+    padding-top: 80px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.Planets{
+    border-style: var(--cardBorderStyle);
+    border-width: var(--cardWidth);
+    border-color: var(--cardBorderColor);
+    background-color: var(--cardColor)
+}
+
+.Planets:hover, .Sun:hover{
+    background-color: var(--cardColor);
+    border-style: solid;
+    border-color: white;
 }
 
 
